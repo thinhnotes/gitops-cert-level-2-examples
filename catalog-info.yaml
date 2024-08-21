@@ -1,16 +1,12 @@
-{
-  "apiVersion": "backstage.io/v1alpha1",
-  "kind": "User",
-  "metadata": {
-    "name": "le.caothihoang",
-    "namespace": "default",
-    "description": "Le Cao Thi Hoang - Your Job Title"
-  },
-  "spec": {
-    "profile": {
-      "displayName": "Le Cao Thi Hoang",
-      "email": "le.caothihoang@gmail.com"
-    },
-    "memberOf": ["your-group"]
-  }
-}
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: le.caothihoang
+  namespace: default
+  description: Le Cao Thi Hoang - Your Job Title
+spec:
+  profile:
+    displayName: Le Cao Thi Hoang
+    email: le.caothihoang@gmail.com
+  memberOf:
+  - your-group
