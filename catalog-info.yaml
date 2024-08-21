@@ -1,12 +1,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: le.caothihoang
+  name: jdoe
   namespace: default
-  description: Le Cao Thi Hoang - Your Job Title
+  description: John Doe - Frontend Developer
 spec:
   profile:
-    displayName: Le Cao Thi Hoang
-    email: le.caothihoang@gmail.com
+    displayName: John Doe
+    email: john.doe@example.com
+    picture: https://example.com/jdoe.png
   memberOf:
-  - your-group
+    - guests
