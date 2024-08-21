@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
-  name: jdoe
+  name: jdoe1
   namespace: default
   description: John Doe - Frontend Developer
 spec:
