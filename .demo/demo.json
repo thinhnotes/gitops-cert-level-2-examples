@@ -1,0 +1,54 @@
+{
+    "title": "Install the Argo CD",
+    "description": "This is install the Argo CD to kind environment",
+    "demos": [
+        {
+            "title": "Check Kind",
+            "description": "Check Kind Environment",
+            "steps": [
+                {
+                    "action": "executeTerminalCommand",
+                    "command": "kind version"
+                }
+            ]
+        },
+        {
+            "title": "Create Kind",
+            "description": "Create Kind Environment",
+            "steps": [
+                {
+                    "action": "executeTerminalCommand",
+                    "command": "kind create cluster"
+                }
+            ]
+        },
+        ,        {
+            "title": "Install Argo CD",
+            "description": "Create Kind Environment",
+            "steps": [
+                {
+                    "action": "executeTerminalCommand",
+                    "command": "kubectl create namespace argocd"
+                },
+                {
+                    "action": "executeTerminalCommand",
+                    "command": "kubectl apply -k https://github.com/argoproj/argo-cd/manifests/crds\\?ref\\=stable"
+                },
+                {
+                    "action": "executeTerminalCommand",
+                    "command": "kubectl get pods -n argocd"
+                }
+            ]
+        },
+        {
+            "title": "Create Delete",
+            "description": "Delete Kind Environment",
+            "steps": [
+                {
+                    "action": "executeTerminalCommand",
+                    "command": "kind delete cluster"
+                }
+            ]
+        }
+    ]
+}
