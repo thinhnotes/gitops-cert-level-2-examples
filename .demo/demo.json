@@ -22,7 +22,7 @@
                 }
             ]
         },
-        ,        {
+        {
             "title": "Install Argo CD",
             "description": "Create Kind Environment",
             "steps": [
