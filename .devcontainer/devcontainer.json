@@ -2,7 +2,7 @@
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
 		"ghcr.io/mpriscella/features/kind:1": {},
-		"ghcr.io/bartventer/arch-devcontainer-features/docker-in-docker:1": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	},
 	"customizations": {
 		"vscode": {
